@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <link rel="stylesheet" href="1.css" />
+    <title>sklep terrarystyczny</title>
+</head>
+
+<body>
+    <div class="row">
+
+        <div id="blok" class="column">
+            <p style="color:black; font-size:60px; text-align: center;"><b><u>Pajaki</u></b></p>
+
+            <form method="get" action="1.php">
+
+            <b>Rozmiar terrarium:</b><br> 20x20x20
+            <input type="checkbox" name="t1" value="t1"/><br> 15x15x25
+            <input type="checkbox" name="t2" value="t2"/><br> 30x20x20
+            <input type="checkbox" name="t3" value="t3"/><br><br>
+
+            <b>Pajaki:</b><br> Caribena Versicolor<input type="checkbox" name="gatunek1" value="g1"/><br> Brahypelma hamori<input type="checkbox" name="gatunek2" value="g2"/><br> Monocentropus balfouri<input type="checkbox" name="gatunek3" value="g3"/><br><br>
+
+            <b>Rozmiar pajaka:</b><br> L1 <input type="radio" name="rozmiar" value="L1"/><br> L3 <input type="radio" name="rozmiar" value="L3" /><br> L4 <input type="radio" name="rozmiar" value="L4"/><br> 2DC <input type="radio" name="rozmiar" value="2DC"/><br> 4DC <input type="radio" name="rozmiar" value="4DC"/><br><br>
+
+            <b>Karmowka</b><br> swierszcz <input type="radio" name="karmowka" value="swierszcz"/><br> karaczan turecki <input type="radio" name="karmowka" value="karaczan turecki"/><br> dubia <input type="radio" name="karmowka" value="dubia"/><br> macznik <input type="radio" name="karmowka" value="macznik"/><br>
+
+            <br><br>
+            <div id="dane">
+                <b>DANE</b><br> Nazwisko <input name="Nazwisko" style="border-radius: 18px;"><br> E-mail <input name="E-mail" style="border-radius: 18px;"><br> Adres <input name="Adres" style="border-radius: 18px;"><br><br>
+                
+                
+                <input type="submit" value="Zamow" onclick="wyswietlDane()">
+
+            </form>
+            </div>
+
+        </div>
+        <div class="column">
+            <img id="zdj1" src="caribena_versicolor.jpg" alt="zdj1">
+            <img id="zdj2" src="m_balfouri.jpg" alt="zdj2">
+        </div>
+    </div>
+
+<!--
+    <script>
+        function wyswietlDane() {
+            var t1= document.getElementByName("t1").value;
+            if(document.getElementByName('t1').checked){
+                console.log(t1)
+            }
+            var t2= document.getElementById("t2").value;
+            if(document.getElementById('t2').checked){
+                console.log(t2)
+            }
+            var t3= document.getElementById("t3").value;
+            if(document.getElementById('t3').checked){
+                console.log(t3)
+            }
+
+
+
+            var g1= document.getElementById("gatunek1").value;
+            if(document.getElementById('gatunek1').checked){
+                console.log(g1)
+            }
+            var g2= document.getElementById("gatunek2").value;
+            if(document.getElementById('gatunek2').checked){
+                console.log(g2)
+            }
+            var g3= document.getElementById("gatunek3").value;
+            if(document.getElementById('gatunek3').checked){
+                console.log(g3)
+            }
+       
+
+
+            var w1= document.getElementById("wybor1").value;
+            if(document.getElementById('wybor1').checked){
+                console.log(w1)
+            }
+            var w2= document.getElementById("wybor2").value;
+            if(document.getElementById('wybor2').checked){
+                console.log(w2)
+            }            
+            var w3= document.getElementById("wybor3").value;
+            if(document.getElementById('wybor3').checked){
+                console.log(w3)
+            }
+            var w4= document.getElementById("wybor4").value;
+            if(document.getElementById('wybor4').checked){
+                console.log(w4)
+            }
+            var w5= document.getElementById("wybor5").value;
+            if(document.getElementById('wybor5').checked){
+                console.log(w5)
+            }
+
+
+
+            var k1= document.getElementById("karmowka1").value;
+            if(document.getElementById('karmowka1').checked){
+                console.log(k1)
+            }
+            var k2= document.getElementById("karmowka2").value;
+            if(document.getElementById('karmowka2').checked){
+                console.log(k2)
+            }            
+            var k3= document.getElementById("karmowka3").value;
+            if(document.getElementById('karmowka3').checked){
+                console.log(k3)
+            }
+            var k4= document.getElementById("karmowka4").value;
+            if(document.getElementById('karmowka4').checked){
+                console.log(k4)
+            }
+       
+
+            var naz= document.getElementById("Nazwisko").value;
+            console.log(naz)
+            var mail= document.getElementById("E-mail").value;
+            console.log(mail)
+            var adr= document.getElementById("Adres").value;
+            console.log(adr)
+        }
+    </script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+#blok {
+    width: 350pt;
+    height: 22cm;
+    padding: 25px;
+    margin: 20px;
+    font-size: 15px;
+    border: 7px double rgb(55, 73, 51);
+    background: rgb(115, 153, 117);
+}
+
+body {
+    background-color: #506d50;
+    padding-left: 30px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#zdj1 {
+    height: 420px;
+    width: 580px;
+    padding: 25px;
+}
+
+#zdj2 {
+    height: 420px;
+    width: 580px;
+    padding: 25px;
+}
